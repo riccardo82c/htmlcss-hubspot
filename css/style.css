@@ -10,6 +10,9 @@
     display: table;
 }
 
+/* inizio stili universali */
+/***************************/
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -45,6 +48,23 @@ ul {
     list-style: none;
 }
 
+button {
+    padding: 20px 30px;
+    color: white;
+    background-color: #fe775a;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #fe775a;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    color: #33475b;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 .container {
     width: 80%;
     max-width: 1200px;
@@ -55,7 +75,10 @@ ul {
     /* border: 1px solid red; */
 }
 
-/* ALL part general stiles */
+/* FINE stili universali */
+/*************************/
+
+/* ALL part - stili base di ogni parte */
 .navigation {
     margin-top: 75px;
     width: 100%;
@@ -86,8 +109,7 @@ ul {
 .bg_blue {
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(to bottom left, #00bca5 , #00a5bb);
-
+    background-image: linear-gradient(to bottom left, #00bca5, #00a5bb);
 }
 
 .bg_white_small {
@@ -171,13 +193,6 @@ li .nav_icon {
     margin-top: 20px;
 }
 
-button {
-    padding: 20px 30px;
-    color: white;
-    background-color: #fe775a;
-    border: none;
-    border-radius: 5px;
-}
 
 /*************************/
 /* WHITE BIG SECTION */
@@ -223,7 +238,7 @@ img {
     margin: 15px auto;
 }
 
-/* MIDDLE right */
+/* middle right */
 .middle .right {
     float: left;
     width: 70%;
@@ -247,9 +262,10 @@ img {
 .middle hr {
     display: inline-block;
     border: 1px solid grey;
-    width: 70%;
+    width: 60%;
     position: relative;
     bottom: 3px;
+    left: 20px;
 }
 
 .middle .right ul li {
@@ -269,14 +285,14 @@ i.circle {
 }
 
 /* DOWN */
-
+/* contenitore delle varie cards */
 .cards {
-
     height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
+/* stili comuni ogni cards */
 .card {
     width: calc(100% / 3);
     height: 100%;
@@ -299,17 +315,15 @@ i.circle {
     padding-left: 20px;
 }
 
-.card .content {
-    height: 100%;
-    background-color: white;
-}
-
+/* contenitore all'interno di ogni card */
 .card .box {
     text-align: center;
     padding: 10px 30px;
     box-shadow: 1px 1px 3px grey;
 }
 
+
+/* stilizzo i vari elementi delle card */
 .card .box ul {
     text-align: left;
 }
