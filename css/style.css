@@ -51,11 +51,12 @@
 
 
 
-.bg_green {
+.bg_hr {
     width: 100%;
-    height: 100px;
+    height: 75px;
     background-color: #afebe4;
-    border: 1px solid black;
+    border-top: 3px solid #33475b;
+    border-bottom: 3px solid #33475b;
 }
 
 .bg_white_big {
