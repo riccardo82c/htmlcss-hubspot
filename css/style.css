@@ -34,6 +34,11 @@ h5 {
     font-size: 14px;
 }
 
+ul {
+    list-style: none;
+
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
@@ -192,7 +197,7 @@ button {
 
 .up h4 {
     width: 70%;
-    margin: 20px auto;
+    margin: 15px auto;
     line-height: 25px;
 }
 
@@ -206,10 +211,12 @@ button {
 
 /* MIDDLE left */
 .middle .left {
+    float: left;
     width: 30%;
     height: 100%;
     padding: 65px;
     text-align: center;
+
 
 }
 
@@ -219,17 +226,55 @@ button {
 
 .left button {
     display: block;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 /* MIDDLE right */
 
 .middle .right {
+    float: left;
     width: 70%;
     height: 100%;
-    padding: 65px;
-    text-align: center;
+    padding: 60px;
+    text-align: left;
+    /* background-color: rgba(240, 41, 12, 0.48); */
+}
 
+.right h5 {
+    margin: 25px 0;
+    line-height: 25px;
+}
+
+.right h4 {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+hr {
+    display: inline-block;
+    border: 1px solid grey;
+    width: 70%;
+    position: relative;
+    bottom: 3px;
+}
+
+.right ul li {
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+.right i {
+    color: #fe775a;
+    position: relative;
+    top: 1px;
+    left: -5px;
+    font-size: 14px;
+}
+
+.right span {
+    margin-left: 5px;
 }
 
 
