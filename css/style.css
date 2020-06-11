@@ -15,14 +15,10 @@
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-
-
-
     /* DELETE */
     /* background-color: rgba(177, 86, 4, 0.39); */
     /* border: 1px solid red; */
 }
-
 
 .navigation {
     margin-top: 75px;
@@ -40,17 +36,12 @@
     /* border: 1px solid black; */
 }
 
-
-
 /* .banner {
     width: 100%;
     height: 100%;
     background-color: rgba(177, 86, 4, 0.39);
 
 } */
-
-
-
 .bg_hr {
     width: 100%;
     height: 75px;
@@ -61,7 +52,7 @@
 
 .bg_white_big {
     width: 100%;
-    height: 800px;
+    height: 1200px;
     background-color: #f4f9fd;
     border: 1px solid black;
 }
@@ -90,13 +81,11 @@ footer {
 /*****************************/
 /*********** NAV *************/
 /*****************************/
-
 .navigation #logo {
     height: 40px;
     margin-top: 15px;
     float: left;
 }
-
 
 .menu_right {
     float: right;
@@ -105,7 +94,6 @@ footer {
 
 .navigation ul li {
     float: left;
-
     list-style: none;
     padding-left: 18px;
 }
@@ -123,13 +111,11 @@ li i {
     margin-left: 5px;
     position: relative;
     top: 3px;
-
 }
 
 /*************************/
 /* HEADER */
 /*************************/
-
 .jumbo_image {
     background-image: url('../img/bg-jumbotron.png');
     height: 600px;
@@ -142,11 +128,8 @@ li i {
     width: 50%;
     height: 100%;
     position: relative;
-
     /* DELETE */
     /* background-color: rgba(123, 249, 160, 0.45); */
-
-
 }
 
 .title {
@@ -179,4 +162,30 @@ li i {
     background-color: #fe775a;
     border: none;
     border-radius: 5px;
+}
+
+/*************************/
+/* WHITE BIG SECTION */
+/*************************/
+.bg_white_big .up {
+    height: 25%;
+
+    background-color: rgba(64, 238, 172, 0.31);
+}
+
+.up h2 {
+    font-size: 40px;
+
+}
+
+
+
+.bg_white_big .middle {
+    height: 25%;
+    background-color: rgba(184, 45, 25, 0.56);
+}
+
+.bg_white_big .down {
+    height: 50%;
+    background-color: rgba(224, 203, 33, 0.44);
 }
