@@ -108,7 +108,7 @@ button:hover {
 
 .bg_blue {
     width: 100%;
-    height: 400px;
+
     background-image: linear-gradient(to bottom left, #00bca5, #00a5bb);
 }
 
@@ -197,6 +197,7 @@ li .nav_icon {
 /*************************/
 /* WHITE BIG SECTION */
 /*************************/
+
 /* UP */
 .bg_white_big .up {
     padding: 40px;
@@ -348,4 +349,70 @@ i.circle {
 
 .card .box button {
     margin: 15px;
+}
+
+/*************************/
+/* BKG BLUE SECTION */
+/*************************/
+
+.bg_blue .container {
+    /* background-color: rgba(108, 32, 93, 0.55); */
+    padding: 40px 0;
+}
+
+.bg_blue .content {
+
+    text-align: center;
+    /* background-color: rgb(142, 193, 184); */
+}
+
+.bg_blue h2, .bg_blue h5 {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bg_blue h2 {
+    margin-bottom: 20px;
+}
+
+.table {
+    /* padding:10px 0px; */
+    width: 100%;
+    height: 363px;
+    margin: 20px auto;
+
+
+    text-align: center;
+}
+
+.table .cell {
+    width: calc(100% / 4);
+    height: 180px;
+    /* display: inline-block; */
+    float: left;
+
+    /* background-color: blue; */
+    padding: 40px;
+    margin-bottom: 5px;
+    /* border: 1px solid white; */
+
+}
+
+.cell i{
+    color: white;
+    font-size: 40px;
+}
+
+.cell:first-child, .cell:nth-child(2), .cell:nth-child(3) {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.cell:nth-child(4) {
+    border-bottom: 1px solid white;
+}
+
+.cell:nth-child(5), .cell:nth-child(6), .cell:nth-child(7) {
+    border-right: 1px solid white;
 }
