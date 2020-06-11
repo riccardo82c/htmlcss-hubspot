@@ -380,7 +380,7 @@ i.circle {
     /* padding:10px 0px; */
     width: 100%;
     height: 363px;
-    margin: 20px auto;
+    margin: 40px auto;
 
 
     text-align: center;
@@ -393,16 +393,31 @@ i.circle {
     float: left;
 
     /* background-color: blue; */
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 5px;
     /* border: 1px solid white; */
 
 }
 
-.cell i{
+
+
+.cell img {
+    height: 30px;
+}
+
+.cell h2 {
+    margin-top: 10px;
+}
+
+/* .cell:nth-child(2) img {
+    height: 50px;
+    color: white;
+} */
+
+/* .cell i{
     color: white;
     font-size: 40px;
-}
+} */
 
 .cell:first-child, .cell:nth-child(2), .cell:nth-child(3) {
     border-right: 1px solid white;
