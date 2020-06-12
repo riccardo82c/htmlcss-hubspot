@@ -275,7 +275,7 @@ img {
     height: 100px;
 }
 
-.left button {
+.bg_white_big .left button {
     display: block;
     margin: 15px auto;
 }
@@ -533,4 +533,27 @@ i.circle {
 .bg_white_small .down {
     height: 60%;
     background-color: rgba(76, 184, 29, 0.47);
+    padding: 40px 0;
+}
+
+/* down left */
+.bg_white_small .down .left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: left;
+    background-color: rgba(93, 103, 193, 0.69);
+}
+
+.bg_white_small .down .left h5 {
+    margin: 20px 0;
+}
+
+
+/* down right */
+.bg_white_small .down .right {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: rgba(133, 186, 217, 0.6);
 }
