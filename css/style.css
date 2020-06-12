@@ -209,7 +209,6 @@ input {
     display: none;
     border: 1px solid #00a4bd;
     border-radius: 5px;
-    
 }
 
 .fixed_nav a:hover {
@@ -389,16 +388,16 @@ i.circle {
     float: left;
 }
 
-.card.center {
+/* .card.center {
     padding: 0 15px;
-}
+} */
 
 .card.one {
     padding-right: 20px;
 }
 
 .card.two {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .card.three {
