@@ -120,7 +120,7 @@ button:hover {
 
 .bg_white_small {
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: #ffffff;
 }
 
@@ -246,11 +246,11 @@ li .nav_icon {
     text-align: center;
 }
 
-.up img {
+.bg_white_big .up img {
     height: 150px;
 }
 
-.up h4 {
+.bg_white_big .up h4 {
     width: 70%;
     margin: 15px auto;
     line-height: 25px;
@@ -441,14 +441,6 @@ i.circle {
     margin-top: 10px;
 }
 
-/* .cell:nth-child(2) img {
-    height: 50px;
-    color: white;
-} */
-/* .cell i{
-    color: white;
-    font-size: 40px;
-} */
 .cell:first-child, .cell:nth-child(2), .cell:nth-child(3) {
     border-right: 1px solid white;
     border-bottom: 1px solid white;
@@ -460,4 +452,44 @@ i.circle {
 
 .cell:nth-child(5), .cell:nth-child(6), .cell:nth-child(7) {
     border-right: 1px solid white;
+}
+
+/*************************/
+/* BKG BLUE SECTION */
+/*************************/
+
+.bg_white_small .container {
+    height: 100%;
+    background-color: rgba(108, 32, 93, 0.55);
+    padding: 40px 0;
+}
+
+.bg_white_small .up {
+    height: 40%;
+    background-color: rgba(109, 29, 184, 0.47);
+}
+
+.bg_white_small .down {
+    height: 60%;
+    background-color: rgba(76, 184, 29, 0.47);
+}
+
+.bg_white_small .up .left {
+    height: 100%;
+    width: 30%;
+    padding: 40px 80px;
+    float: left;
+    background-color: rgb(221, 222, 145);
+}
+
+.bg_white_small .up .left h4 {
+    margin-top: 20px;
+}
+
+
+.bg_white_small .up .right {
+    height: 100%;
+    width: 70%;
+    float: left;
+    background-color: rgba(223, 4, 119, 0.46);
 }
