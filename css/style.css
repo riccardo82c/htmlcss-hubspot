@@ -55,7 +55,6 @@ button {
     border: none;
     border-radius: 5px;
     border: 1px solid #fe775a;
-    transition-duration: 0.4s;
 }
 
 button:hover {
@@ -163,6 +162,54 @@ footer {
 
 .english .nav_icon {
     margin: 0 10px;
+}
+
+.fixed_button {
+    height: 75px;
+    /* width: 450px; */
+    float: right;
+    /* background-color: grey; */
+    line-height: 75px;
+}
+
+.fixed_button .search {
+    float: right;
+    margin-right: 20px;
+    color: #00a4bd;
+}
+
+.fixed_button .search:hover+input {
+    display: block;
+}
+
+.fixed_button button {
+    float: right;
+    margin: 12px 10px;
+}
+
+button.fixed_get_btn {
+    padding: 15px 10px;
+}
+
+button.fixed_log_btn {
+    color: #fe775a;
+    background-color: white;
+    padding: 15px 30px;
+}
+
+button.fixed_log_btn:hover {
+    color: white;
+    background-color: #fe775a;
+}
+
+input {
+    height: 20px;
+    margin: 26px 10px;
+    float: right;
+    display: none;
+    border: 1px solid #00a4bd;
+    border-radius: 5px;
+    
 }
 
 .fixed_nav a:hover {
@@ -464,7 +511,6 @@ i.circle {
     padding: 40px 0;
 }
 
-
 /* UP */
 .bg_white_small .up {
     height: 40%;
@@ -472,7 +518,6 @@ i.circle {
 }
 
 /* up left */
-
 .bg_white_small .up .left {
     height: 100%;
     width: 30%;
@@ -494,7 +539,6 @@ i.circle {
 }
 
 .bg_white_small .brands {
-
     padding: 40px 55px;
 }
 
@@ -554,7 +598,6 @@ i.circle {
     margin: 20px 0;
 }
 
-
 /* down right */
 .bg_white_small .down .right {
     text-align: right;
@@ -562,7 +605,6 @@ i.circle {
     width: 50%;
     float: left;
     /* background-color: rgba(133, 186, 217, 0.6); */
-
 }
 
 .bg_white_small .down .right img {
@@ -578,13 +620,13 @@ footer {
 }
 
 footer a {
-color: white;
-text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 footer a:hover {
-color: rgb(66, 191, 252);
-text-decoration: none;
+    color: #00a4bd;
+    text-decoration: none;
 }
 
 /* SOME LINK SECTION */
@@ -612,7 +654,6 @@ footer .some_link {
     color: white;
     text-decoration: none;
 } */
-
 .some_link .list button {
     color: #32495b;
     background-color: white;
@@ -625,7 +666,7 @@ footer .some_link {
     border: 1px solid white;
 }
 
-.some_link .list i{
+.some_link .list i {
     padding-right: 15px;
 }
 
@@ -633,8 +674,6 @@ footer .some_link {
     position: relative;
     top: 2px;
 }
-
-
 
 /* LANG SECTIONS*/
 footer .lang {
@@ -652,8 +691,6 @@ footer .lang div {
 footer .lang div span {
     margin: 0 20px;
 }
-
-
 
 /* PRIVACY SECTION */
 footer .privacy {
@@ -681,14 +718,13 @@ footer .privacy {
     line-height: 80px;
 }
 
-.privacy_stuff a{
+.privacy_stuff a {
     margin-left: 15px;
 }
 
-footer .privacy img{
+footer .privacy img {
     height: 25px;
     margin-bottom: 5px;
-
 }
 
 .footer .privacy_stuff {
