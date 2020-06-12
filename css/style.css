@@ -457,16 +457,15 @@ i.circle {
 /*************************/
 /* BKG BLUE SECTION */
 /*************************/
-
 .bg_white_small .container {
     height: 100%;
-    background-color: rgba(108, 32, 93, 0.55);
+    /* background-color: rgba(108, 32, 93, 0.55); */
     padding: 40px 0;
 }
 
 .bg_white_small .up {
     height: 40%;
-    background-color: rgba(109, 29, 184, 0.47);
+    /* background-color: rgba(109, 29, 184, 0.47); */
 }
 
 .bg_white_small .down {
@@ -477,19 +476,54 @@ i.circle {
 .bg_white_small .up .left {
     height: 100%;
     width: 30%;
-    padding: 40px 80px;
+    padding: 40px 90px;
     float: left;
-    background-color: rgb(221, 222, 145);
+    /* background-color: rgb(221, 222, 145); */
 }
 
 .bg_white_small .up .left h4 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
-
 
 .bg_white_small .up .right {
     height: 100%;
     width: 70%;
     float: left;
-    background-color: rgba(223, 4, 119, 0.46);
+    /* background-color: rgba(223, 4, 119, 0.46); */
+}
+
+.bg_white_small .logos {
+    padding: 55px;
+}
+
+.bg_white_small .logos .commercial {
+    width: 170px;
+    height: 50px;
+    float: left;
+    margin-bottom: 5px;
+    /* border: 1px solid white; */
+    position: relative;
+}
+
+.commercial img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* brand */
+/* big */
+.commercial img.big_brand {
+    height: 15px;
+}
+
+/* medium */
+.commercial img.medium_brand {
+    height: 30px;
+}
+
+/* small */
+.commercial img.small_brand {
+    height: 40px;
 }
