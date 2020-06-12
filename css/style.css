@@ -12,7 +12,6 @@
 
 /* inizio stili universali */
 /***************************/
-
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -64,7 +63,6 @@ button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .container {
     width: 80%;
     max-width: 1200px;
@@ -77,8 +75,17 @@ button:hover {
 
 /* FINE stili universali */
 /*************************/
-
 /* ALL part - stili base di ogni parte */
+.fixed_nav {
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #f5f8fa;
+    border-bottom: 1px solid grey;
+    z-index: 100;
+}
+
 .navigation {
     margin-top: 75px;
     width: 100%;
@@ -108,7 +115,6 @@ button:hover {
 
 .bg_blue {
     width: 100%;
-
     background-image: linear-gradient(to bottom left, #00bca5, #00a5bb);
 }
 
@@ -123,6 +129,43 @@ footer {
     height: 400px;
     background-color: #32495b;
     border: 1px solid black;
+}
+
+/*****************************/
+/********* FIX NAV ***********/
+/*****************************/
+.fixed_nav .container {
+    /* background-color: rgba(11, 168, 66, 0.45); */
+}
+
+.fixed_nav .english, .fixed_nav .contact {
+    height: 30px;
+    float: left;
+    margin: 22px 20px 22px 0;
+    padding: 5px 0;
+    color: #33475b;
+}
+
+.fixed_nav a {
+    color: #33475b;
+    text-decoration: none;
+}
+
+.english {
+    width: 120px;
+    border-right: 2px solid #cbd6e2;
+}
+
+.english .fa-globe {
+    margin-right: 10px;
+}
+
+.english .nav_icon {
+    margin: 0 10px;
+}
+
+.fixed_nav a:hover {
+    color: #fe775a;
 }
 
 /*****************************/
@@ -193,11 +236,9 @@ li .nav_icon {
     margin-top: 20px;
 }
 
-
 /*************************/
 /* WHITE BIG SECTION */
 /*************************/
-
 /* UP */
 .bg_white_big .up {
     padding: 40px;
@@ -323,7 +364,6 @@ i.circle {
     box-shadow: 1px 1px 3px grey;
 }
 
-
 /* stilizzo i vari elementi delle card */
 .card .box ul {
     text-align: left;
@@ -354,14 +394,12 @@ i.circle {
 /*************************/
 /* BKG BLUE SECTION */
 /*************************/
-
 .bg_blue .container {
     /* background-color: rgba(108, 32, 93, 0.55); */
     padding: 40px 0;
 }
 
 .bg_blue .content {
-
     text-align: center;
     /* background-color: rgb(142, 193, 184); */
 }
@@ -381,8 +419,6 @@ i.circle {
     width: 100%;
     height: 363px;
     margin: 40px auto;
-
-
     text-align: center;
 }
 
@@ -391,15 +427,11 @@ i.circle {
     height: 180px;
     /* display: inline-block; */
     float: left;
-
     /* background-color: blue; */
     padding: 20px;
     margin-bottom: 5px;
     /* border: 1px solid white; */
-
 }
-
-
 
 .cell img {
     height: 30px;
@@ -413,12 +445,10 @@ i.circle {
     height: 50px;
     color: white;
 } */
-
 /* .cell i{
     color: white;
     font-size: 40px;
 } */
-
 .cell:first-child, .cell:nth-child(2), .cell:nth-child(3) {
     border-right: 1px solid white;
     border-bottom: 1px solid white;
