@@ -64,7 +64,7 @@ button:hover {
 }
 
 .container {
-    width: 80%;
+    width: 75%;
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -209,9 +209,9 @@ li .nav_icon {
 .jumbo_image {
     background-image: url('../img/bg-jumbotron.png');
     height: 600px;
-    background-size: 1400px 700px;
+    background-size: 1200px 600px;
     background-repeat: no-repeat;
-    background-position: 100% -15px;
+    background-position: 100% 75px;
 }
 
 .banner {
