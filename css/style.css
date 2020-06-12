@@ -1,3 +1,4 @@
+/* reset and fix */
 * {
     padding: 0;
     margin: 0;
@@ -68,14 +69,12 @@ button:hover {
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    /* DELETE */
-    /* background-color: rgba(177, 86, 4, 0.39); */
-    /* border: 1px solid red; */
 }
 
 /* FINE stili universali */
-/*************************/
+/***************************************/
 /* ALL part - stili base di ogni parte */
+/***************************************/
 .fixed_nav {
     height: 75px;
     width: 100%;
@@ -134,10 +133,6 @@ footer {
 /*****************************/
 /********* FIX NAV ***********/
 /*****************************/
-.fixed_nav .container {
-    /* background-color: rgba(11, 168, 66, 0.45); */
-}
-
 .fixed_nav .english, .fixed_nav .contact {
     height: 30px;
     float: left;
@@ -166,9 +161,7 @@ footer {
 
 .fixed_button {
     height: 75px;
-    /* width: 450px; */
     float: right;
-    /* background-color: grey; */
     line-height: 75px;
 }
 
@@ -260,6 +253,8 @@ li .nav_icon {
     background-repeat: no-repeat;
     background-position: 100% 75px;
 }
+
+
 
 .banner {
     width: 50%;
@@ -391,7 +386,6 @@ i.circle {
 /* .card.center {
     padding: 0 15px;
 } */
-
 .card.one {
     padding-right: 20px;
 }
