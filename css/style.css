@@ -17,6 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+    letter-spacing: 1.5px;
     color: #33475b;
 }
 
@@ -120,13 +121,13 @@ button:hover {
 
 .bg_white_small {
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     background-color: #ffffff;
 }
 
 footer {
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: #32495b;
     border: 1px solid black;
 }
@@ -532,8 +533,8 @@ i.circle {
 /* DOWN */
 .bg_white_small .down {
     height: 60%;
-    background-color: rgba(76, 184, 29, 0.47);
-    padding: 40px 0;
+    /* background-color: rgba(76, 184, 29, 0.47); */
+    padding: 10px 0;
 }
 
 /* down left */
@@ -542,7 +543,11 @@ i.circle {
     width: 50%;
     float: left;
     text-align: left;
-    background-color: rgba(93, 103, 193, 0.69);
+    /* background-color: rgba(93, 103, 193, 0.69); */
+}
+
+.bg_white_small .down .left h2 {
+    margin-top: 40px;
 }
 
 .bg_white_small .down .left h5 {
@@ -552,8 +557,15 @@ i.circle {
 
 /* down right */
 .bg_white_small .down .right {
+    text-align: right;
     height: 100%;
     width: 50%;
     float: left;
-    background-color: rgba(133, 186, 217, 0.6);
+    /* background-color: rgba(133, 186, 217, 0.6); */
+
+}
+
+.bg_white_small .down .right img {
+    height: 340px;
+
 }
