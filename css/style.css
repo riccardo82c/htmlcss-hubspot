@@ -638,7 +638,7 @@ footer .some_link {
 
 /* LANG SECTIONS*/
 footer .lang {
-    height: 20%;
+    /* height: 20%; */
     padding: 40px 0;
     /* background-color: rgba(215, 36, 106, 0.55); */
 }
