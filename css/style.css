@@ -455,7 +455,7 @@ i.circle {
 }
 
 /*************************/
-/* BKG BLUE SECTION */
+/* WHITE SMALL SECTION */
 /*************************/
 .bg_white_small .container {
     height: 100%;
@@ -463,15 +463,14 @@ i.circle {
     padding: 40px 0;
 }
 
+
+/* UP */
 .bg_white_small .up {
     height: 40%;
     /* background-color: rgba(109, 29, 184, 0.47); */
 }
 
-.bg_white_small .down {
-    height: 60%;
-    background-color: rgba(76, 184, 29, 0.47);
-}
+/* up left */
 
 .bg_white_small .up .left {
     height: 100%;
@@ -485,6 +484,7 @@ i.circle {
     margin-top: 10px;
 }
 
+/* up right */
 .bg_white_small .up .right {
     height: 100%;
     width: 70%;
@@ -492,11 +492,12 @@ i.circle {
     /* background-color: rgba(223, 4, 119, 0.46); */
 }
 
-.bg_white_small .logos {
-    padding: 55px;
+.bg_white_small .brands {
+
+    padding: 40px 55px;
 }
 
-.bg_white_small .logos .commercial {
+.bg_white_small .brands .brand {
     width: 170px;
     height: 50px;
     float: left;
@@ -505,25 +506,31 @@ i.circle {
     position: relative;
 }
 
-.commercial img {
+.brand img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* brand */
+/* differnte sizing brand images brand */
 /* big */
-.commercial img.big_brand {
+.brand img.big_brand {
     height: 15px;
 }
 
 /* medium */
-.commercial img.medium_brand {
+.brand img.medium_brand {
     height: 30px;
 }
 
 /* small */
-.commercial img.small_brand {
+.brand img.small_brand {
     height: 40px;
+}
+
+/* DOWN */
+.bg_white_small .down {
+    height: 60%;
+    background-color: rgba(76, 184, 29, 0.47);
 }
