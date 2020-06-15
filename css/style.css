@@ -331,9 +331,8 @@ input {
     z-index: 100;
     border: 1px solid #d5dee8;
     top: 60px;
-    left: -20px;
-    width: 450px;
-    padding: 0 10px 10px 30px;
+    left: -100px;
+    padding: 0 10px 10px 10px;
     line-height: normal;
 }
 
@@ -351,7 +350,7 @@ input {
 /* impostazioni del triangolino qui */
 .triangle_software_dropdown {
     position: relative;
-    left: 70px;
+    left: 170px;
     top: -8px;
 }
 
@@ -360,21 +359,28 @@ input {
     line-height: normal;
     display: inline-block;
     width: 100%;
-    margin: 10px 0;
+    padding: 10px;
     color: black;
+
 }
 
 .software_dropdown a:hover {
     background-color: rgba(0, 164, 189, 0.1);
 }
 
-.software_dropdown i {
+.software_dropdown img {
+    float: left;
+    height: 50px;
+}
+
+/* .software_dropdown i {
     float: left;
     padding-top: 10px;
-}
+} */
 
 .software_dropdown .software_dropdown_one {
     float: left;
+    margin-left: 10px;
 }
 
 .software_dropdown h4 {
