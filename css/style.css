@@ -11,10 +11,13 @@
     display: table;
 }
 
+
+
 /* inizio stili universali */
 /***************************/
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    color: #33475b;
 }
 
 h1, h2, h3, h4, h5 {
@@ -146,43 +149,31 @@ footer {
     cursor: pointer;
 }
 
-/* .fixed_nav .english:hover a {
-    color: #fe775a;
-} */
 
-/*************************/
-/*************************/
-/* dropdown menu general */
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: white;
-    z-index: 100;
-    border: 1px solid #d5dee8;
-
-}
-
-.dropdown:hover {
-    display: block;
-    cursor: pointer;
-}
 /*************************/
 /*************************/
 
 /* dropdown menu english*/
 .english_dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid #d5dee8;
     top: 60px;
     left: 0px;
     height: 200px;
     width: 120px;
 }
 
-
-
-
 /* hover effect dropdown menu */
-.fixed_nav .english:hover~.dropdown {
+.english:hover~.english_dropdown {
     display: block;
+}
+
+.english_dropdown:hover {
+    display: block;
+    cursor: pointer;
 }
 
 
@@ -319,9 +310,40 @@ input {
     line-height: 75px;
 }
 
+.ul_main_nav {
+    margin-right: 20px;
+}
 
-/* dropdown menu software*/
+.navigation .ul_main_nav li {
+    float: left;
+    list-style: none;
+    padding-left: 18px;
+}
+
+.navigation .ul_main_nav li a {
+    display: block;
+    text-decoration: none;
+    color: #32495b;
+}
+
+.navigation .ul_main_nav li a:hover {
+    color: #fe775a;
+}
+
+.ul_main_nav li .nav_icon {
+    margin-left: 5px;
+}
+
+/*************************/
+/* dropdown menu SOFTWARE*/
+/*************************/
+
 .software_dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid #d5dee8;
     top: 60px;
     left: -20px;
     width: 450px;
@@ -329,14 +351,16 @@ input {
     line-height: normal;
 }
 
-.software_dropdown a{
-color: #33475b;
-}
 
 /* hover effect dropdown menu */
-.software:hover~.dropdown {
+/* tolgo il display: hidden */
+.software:hover~.software_dropdown {
     display: block;
+}
 
+.software_dropdown:hover {
+    display: block;
+    cursor: pointer;
 }
 
 
@@ -347,13 +371,13 @@ color: #33475b;
     top: -8px;
 }
 
-/* sofware menu */
-
+/* sofware menu internamente*/
 .software_dropdown a {
     line-height: normal;
     display: inline-block;
     width: 100%;
     margin: 10px 0;
+    color: black;
 }
 
 .software_dropdown a:hover{
@@ -380,31 +404,223 @@ color: #33475b;
 
 .software_dropdown  hr {
     margin: 10px 0;
+    border: 1px solid #d5dee8;
 
 }
 
 
-.navigation ul li {
-    float: left;
-    list-style: none;
-    padding-left: 18px;
+/*************************/
+/* dropdown menu RESOURCES*/
+/*************************/
+
+.res_dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid #d5dee8;
+    top: 60px;
+    left: -400px;
+    padding: 0 20px 20px 20px;
+    line-height: normal;
 }
 
-.navigation li a {
+
+/* hover effect dropdown menu */
+/* tolgo il display: hidden */
+.res:hover~.res_dropdown {
     display: block;
+}
+
+.res_dropdown:hover {
+    display: block;
+    cursor: pointer;
+}
+
+
+/* impostazioni del triangolino qui */
+.triangle_res_dropdown {
+    position: relative;
+    left: 625px;
+    top: -8px;
+}
+
+/* sofware menu internamente*/
+.res_dropdown a {
+    line-height: normal;
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    color: black;
+    float: left;
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+.res_dropdown a:hover{
+    background-color: rgba(0, 164, 189, 0.1);
+}
+
+.res_dropdown .res_dropdown_one {
+    float: left;
+
+
+}
+
+.res_dropdown h4 {
+    margin-bottom: 5px;
+}
+
+.res_dropdown span {
+    font-size: 12px;
+}
+
+
+.res_dropdown  hr {
+    margin: 10px 0;
+    border: 1px solid #d5dee8;
+
+}
+
+
+/*************************/
+/* dropdown menu PARTNERS*/
+/*************************/
+
+.part_dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid #d5dee8;
+    top: 60px;
+    left: -100px;
+    padding: 0 20px 20px 20px;
+    line-height: normal;
+}
+
+
+/* hover effect dropdown menu */
+/* tolgo il display: hidden */
+.part:hover~.part_dropdown {
+    display: block;
+}
+
+.part_dropdown:hover {
+    display: block;
+    cursor: pointer;
+}
+
+
+/* impostazioni del triangolino qui */
+.triangle_part_dropdown {
+    position: relative;
+    left: 415px;
+    top: -8px;
+}
+
+/* sofware menu internamente*/
+.part_dropdown a {
+    line-height: normal;
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    color: black;
+    float: left;
+    width: calc(100% / 2);
+    padding: 10px;
+}
+
+.part_dropdown a:hover{
+    background-color: rgba(0, 164, 189, 0.1);
+}
+
+.part_dropdown .part_dropdown_one {
+    float: left;
+
+
+}
+
+.part_dropdown h4 {
+    margin-bottom: 5px;
+}
+
+.part_dropdown span {
+    font-size: 12px;
+}
+
+
+
+/*************************/
+/* dropdown menu ABOUT*/
+/*************************/
+
+.about_dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid #d5dee8;
+    top: 60px;
+    left: 90px;
+    padding: 0 10px;
+    line-height: normal;
+}
+
+
+/* hover effect dropdown menu */
+/* tolgo il display: hidden */
+.about:hover~.about_dropdown {
+    display: block;
+}
+
+.about_dropdown:hover {
+    display: block;
+    cursor: pointer;
+}
+
+
+/* impostazioni del triangolino qui */
+.triangle_about_dropdown {
+    position: relative;
+    left: 310px;
+    top: -8px;
+}
+
+/* sofware menu internamente*/
+.about_dropdown a {
+    width: 100%;
+    /* margin: 10px 0; */
+    float: left;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
     text-decoration: none;
-    color: #32495b;
 }
 
-.navigation li a:hover {
-    color: #fe775a;
+.about_dropdown a:hover{
+    background-color: rgba(0, 164, 189, 0.1);
 }
 
-li .nav_icon {
-    margin-left: 5px;
-
-
+.about_dropdown .about_dropdown_one {
+    float: left;
+    width: calc(100% / 3);
 }
+
+.about_dropdown h4 {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+
+
+
+/*****************************************/
+/*****************************************/
+
+
+
+
 
 /*************************/
 /* HEADER */
@@ -511,6 +727,7 @@ img {
     position: relative;
     bottom: 3px;
     left: 20px;
+    border: 1px solid #d5dee8;
 }
 
 .middle .right ul li {
@@ -573,7 +790,7 @@ i.circle {
 
 .card .box hr {
     margin: 50px 0 20px;
-    border: 1px solid grey;
+    border: 1px solid #d5dee8;
 }
 
 .card .box h3 {
