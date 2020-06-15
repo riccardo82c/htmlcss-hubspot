@@ -83,7 +83,7 @@ button:hover {
     top: 0;
     background-color: #f5f8fa;
     border-bottom: 1px solid grey;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .navigation {
@@ -134,7 +134,6 @@ footer {
 /*****************************/
 /********* FIX NAV ***********/
 /*****************************/
-
 /* div in alto a sx */
 .fixed_nav .english {
     height: 30px;
@@ -151,28 +150,50 @@ footer {
     color: #fe775a;
 } */
 
-/* dropdown menu english */
-.english_menu {
-    display: none;
+/*************************/
+/*************************/
+/* dropdown menu general */
+.dropdown {
+    display: block;
     position: absolute;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid #d5dee8;
+
+}
+
+.dropdown:hover {
+    display: block;
+    cursor: pointer;
+}
+/*************************/
+/*************************/
+
+/* dropdown menu english*/
+.english_dropdown {
     top: 60px;
     left: 0px;
     height: 200px;
     width: 120px;
-    background-color: white;
-    border-radius: 5px;
-    z-index: 100;
-    border: 1px solid black;
 }
+
+
+
 
 /* hover effect dropdown menu */
-.fixed_nav .english:hover~.english_menu {
+.fixed_nav .english:hover~.dropdown {
     display: block;
 }
 
-.english_menu:hover {
-    display: block;
-    cursor: pointer;
+
+
+.fixed_nav hr {
+    position: relative;
+    width: 35px;
+    top: 35px;
+    left: -15px;
+    transform: rotate(90deg);
+    border: 1px solid #d5dee8;
 }
 
 .fixed_nav .contact {
@@ -183,30 +204,38 @@ footer {
     color: #33475b;
 }
 
+
+/*************************/
+/*************************/
+/* impostazioni del triangolino globali */
 .triangle {
     width: 15px;
     height: 15px;
-    position: relative;
-    left: 83px;
-    top: -8px;
     transform: rotate(45deg);
     overflow: hidden;
     background-color: inherit;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    z-index: 99;
+    border-top: 1px solid #d5dee8;
+    border-left: 1px solid #d5dee8;
+    /* z-index: 99; */
+}
+/*************************/
+/*************************/
+
+/* impostazioni del triangolino qui */
+.triangle_english_dropdown {
+    position: relative;
+    left: 83px;
+    top: -8px;
 }
 
-.english_menu a {
+.english_dropdown a {
     display: block;
-    padding: 5px 10px;
+    padding: 5px 15px;
 }
 
-.english_menu a:hover {
+.english_dropdown a:hover {
     background-color: rgba(0, 164, 189, 0.1);
-
 }
-
 
 .fixed_nav a {
     color: #33475b;
@@ -215,7 +244,7 @@ footer {
 
 .english {
     width: 120px;
-    border-right: 2px solid #cbd6e2;
+    /* border-right: 2px solid #cbd6e2; */
 }
 
 .english .fa-globe {
@@ -271,15 +300,9 @@ input {
     border-radius: 5px;
 }
 
-
-
-
 /* .fixed_nav a:hover {
     color: #fe775a;
 } */
-
-
-
 /*****************************/
 /*********** NAV *************/
 /*****************************/
@@ -290,9 +313,73 @@ input {
 }
 
 .menu_right {
+    position: relative;
     float: right;
     line-height: 75px;
 }
+
+
+
+
+/* dropdown menu software*/
+.software_dropdown {
+    top: 60px;
+    left: 0px;
+    line-height: normal;
+
+    /* background-color: rgba(34, 135, 201, 0.4); */
+}
+
+/* impostazioni del triangolino qui */
+.triangle_software_dropdown {
+    position: relative;
+    left: 80px;
+    top: -8px;
+
+}
+
+/* sofware ul */
+
+.software_dropdown {
+    /* background-color: black; */
+
+    line-height: normal;
+}
+
+.software_dropdown a {
+    line-height: normal;
+    display: inline-block;
+    width: 100%;
+
+    /* padding: 15px; */
+}
+
+.software_dropdown a:hover{
+    background-color: lightblue;
+}
+
+.software_dropdown i{
+    float: left;
+    padding-top: 10px;
+}
+
+.software_dropdown .software_dropdown_one {
+    float: left;
+}
+
+
+.software_dropdown  hr {
+    margin: 10px 0;
+}
+
+.menu_right h5 {
+
+}
+
+
+
+
+
 
 .navigation ul li {
     float: left;
@@ -301,6 +388,7 @@ input {
 }
 
 .navigation li a {
+    display: block;
     text-decoration: none;
     color: #32495b;
 }
@@ -311,8 +399,8 @@ input {
 
 li .nav_icon {
     margin-left: 5px;
-    position: relative;
-    top: 3px;
+
+
 }
 
 /*************************/
@@ -325,8 +413,6 @@ li .nav_icon {
     background-repeat: no-repeat;
     background-position: 100% 75px;
 }
-
-
 
 .banner {
     width: 50%;
@@ -735,10 +821,10 @@ footer .some_link {
     padding-right: 15px;
 }
 
-.some_link .list .nav_icon {
+/* .some_link .list .nav_icon {
     position: relative;
     top: 2px;
-}
+} */
 
 /* LANG SECTIONS*/
 footer .lang {
