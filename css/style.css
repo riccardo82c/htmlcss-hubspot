@@ -69,6 +69,7 @@ button:hover {
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 /* FINE stili universali */
@@ -133,12 +134,64 @@ footer {
 /*****************************/
 /********* FIX NAV ***********/
 /*****************************/
-.fixed_nav .english, .fixed_nav .contact {
+
+/* div in alto a sx */
+.fixed_nav .english {
     height: 30px;
     float: left;
-    margin: 22px 20px 22px 0;
+    margin: 0px;
+    padding: 27px 0 47px 0;
+}
+
+.fixed_nav .english:hover {
+    cursor: pointer;
+}
+
+/* .fixed_nav .english:hover a {
+    color: #fe775a;
+} */
+
+/* dropdown menu english */
+.english_menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    height: 200px;
+    width: 120px;
+    background-color: rgba(89, 16, 177, 0.55);
+    border-radius: 5px;
+    z-index: 100;
+}
+
+/* hover effect dropdown menu */
+.fixed_nav .english:hover~.english_menu {
+    display: block;
+}
+
+.english_menu:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.fixed_nav .contact {
+    height: 30px;
+    float: left;
+    margin: 22px 20px 22px 22px;
     padding: 5px 0;
     color: #33475b;
+}
+
+.triangle {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 83px;
+    top: -5px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    background-color: inherit;
+    z-index: 99;
 }
 
 .fixed_nav a {
@@ -204,9 +257,14 @@ input {
     border-radius: 5px;
 }
 
-.fixed_nav a:hover {
+
+
+
+/* .fixed_nav a:hover {
     color: #fe775a;
-}
+} */
+
+
 
 /*****************************/
 /*********** NAV *************/
