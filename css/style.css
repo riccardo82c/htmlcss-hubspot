@@ -154,7 +154,7 @@ footer {
 /*************************/
 /* dropdown menu general */
 .dropdown {
-    display: block;
+    display: none;
     position: absolute;
     background-color: white;
     z-index: 100;
@@ -319,39 +319,40 @@ input {
 }
 
 
-
-
 /* dropdown menu software*/
 .software_dropdown {
     top: 60px;
     left: 0px;
+    width: 100%;
     line-height: normal;
-
-    /* background-color: rgba(34, 135, 201, 0.4); */
 }
+
+.software_dropdown a{
+
+
+color: #33475b;
+}
+
+/* hover effect dropdown menu */
+.software:hover~.dropdown {
+    display: block;
+
+}
+
 
 /* impostazioni del triangolino qui */
 .triangle_software_dropdown {
     position: relative;
     left: 80px;
     top: -8px;
-
 }
 
-/* sofware ul */
-
-.software_dropdown {
-    /* background-color: black; */
-
-    line-height: normal;
-}
+/* sofware menu */
 
 .software_dropdown a {
     line-height: normal;
     display: inline-block;
     width: 100%;
-
-    /* padding: 15px; */
 }
 
 .software_dropdown a:hover{
@@ -370,15 +371,8 @@ input {
 
 .software_dropdown  hr {
     margin: 10px 0;
-}
-
-.menu_right h5 {
 
 }
-
-
-
-
 
 
 .navigation ul li {
