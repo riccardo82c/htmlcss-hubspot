@@ -159,9 +159,10 @@ footer {
     left: 0px;
     height: 200px;
     width: 120px;
-    background-color: rgba(89, 16, 177, 0.55);
+    background-color: white;
     border-radius: 5px;
     z-index: 100;
+    border: 1px solid black;
 }
 
 /* hover effect dropdown menu */
@@ -187,12 +188,25 @@ footer {
     height: 15px;
     position: relative;
     left: 83px;
-    top: -5px;
+    top: -8px;
     transform: rotate(45deg);
     overflow: hidden;
     background-color: inherit;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
     z-index: 99;
 }
+
+.english_menu a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.english_menu a:hover {
+    background-color: rgba(0, 164, 189, 0.1);
+
+}
+
 
 .fixed_nav a {
     color: #33475b;
