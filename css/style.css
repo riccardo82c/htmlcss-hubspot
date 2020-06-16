@@ -62,7 +62,7 @@ button {
 button:hover {
     color: #33475b;
     background: rgba(0, 0, 0, 0);
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 5px 16px 0 rgba(0, 0, 0, 0.24);
 }
 
 .container {
@@ -111,7 +111,7 @@ button:hover {
 
 .bg_white_big {
     width: 100%;
-    background-color: #f4f9fd;
+    background-color: #f5f8fa;
 }
 
 .bg_blue {
@@ -251,7 +251,6 @@ footer {
 /* .fixed_button .search:hover+input {
     display: block;
 } */
-
 .fixed_button button {
     float: right;
     margin: 12px 10px;
@@ -307,12 +306,9 @@ input {
     padding-left: 18px;
 }
 
-
-
 /* .navigation .ul_main_nav li.software {
     padding-right: 30px;
 } */
-
 .navigation .ul_main_nav li a {
     display: block;
     text-decoration: none;
@@ -322,7 +318,6 @@ input {
 /* .navigation .ul_main_nav li a:hover {
     color: #fe775a;
 } */
-
 .ul_main_nav li .nav_icon {
     margin-left: 5px;
 }
@@ -351,7 +346,6 @@ input {
 /* .software {
     padding-right: 18px
 } */
-
 .software_dropdown:hover {
     display: block;
     cursor: pointer;
@@ -371,7 +365,6 @@ input {
     width: 100%;
     padding: 10px;
     color: black;
-
 }
 
 .software_dropdown a:hover {
@@ -387,7 +380,6 @@ input {
     float: left;
     padding-top: 10px;
 } */
-
 .software_dropdown .software_dropdown_one {
     float: left;
     margin-left: 10px;
@@ -590,11 +582,6 @@ input {
     padding-left: 28px;
 }
 
-
-
-
-
-
 /*****************************************/
 /*****************************************/
 /*************************/
@@ -649,7 +636,13 @@ input {
 
 /* MIDDLE */
 .bg_white_big .middle {
-    box-shadow: 1px 1px 3px grey;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.middle:hover {
+    box-shadow: 1px 1px 3px #d5dee8;
+    transform: scale(1.05);
 }
 
 /* middle left */
@@ -747,7 +740,14 @@ i.circle {
 .card .box {
     text-align: center;
     padding: 10px 30px;
-    box-shadow: 1px 1px 3px grey;
+    background-color: white;
+    /* box-shadow: 1px 1px 3px grey; */
+    transition: all 0.5s;
+}
+
+.card .box:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 3px #d5dee8;
 }
 
 /* stilizzo i vari elementi delle card */
@@ -937,7 +937,7 @@ i.circle {
     height: 100%;
     width: 50%;
     float: left;
-    padding:0 90px;
+    padding: 0 90px;
 }
 
 .bg_white_small .down .right img {
